@@ -42,7 +42,7 @@ nav a {
 
 .banner h2 {
     position: absolute;
-    top: 20%; /* positions the banner 25% from the top of the banner */
+    top: 20%; /* positions the Banner Title text 25% from the top of the banner */
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
@@ -50,14 +50,14 @@ nav a {
 
 .banner p {
     position: absolute;
-    top: 30%; /* positions the banner 25% from the top of the banner */
+    top: 30%; /* positions the banner paragraph text 30% from the top of the banner */
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
 }
 
 .banner p + p {
-    top: 38%; /* Adjust the distance from the top for subsequent paragraphs */
+    top: 38%; /* Adjust the distance from the top for subsequent paragraphs. 38% looked better*/
 }
 
 .slider-navigation {
@@ -65,14 +65,14 @@ nav a {
     top: 50%;
     left: 25%;
     right: 25%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); /* Perfectly centers it */
     display: flex;
     justify-content: space-between;
   }
 
 #prevButton,
 #nextButton {
-  font-size: 24px;
+  font-size: 35px;
   background: transparent;
   border: none;
   cursor: pointer;
