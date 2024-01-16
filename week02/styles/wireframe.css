@@ -1,0 +1,126 @@
+
+/*Header Elements*/
+header {
+    align-items: center;
+    display: flex;          /* I was struggling so I had to look this up */
+    flex-direction: column; /* to stack vertically */
+    text-align: center;
+}
+img {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+nav a {
+    display: inline;
+    padding: 30px;
+}
+
+/*Scrolling triple Banner*/
+#banner-box {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    display: flex;
+    overflow: hidden;   /* How to hide the banners not currently at focus */
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.banner {
+    min-width: 100%;
+    max-width: 1200px;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+
+.banner img {
+    max-width: 100%;
+    display: block;
+}
+
+.banner h2 {
+    position: absolute;
+    top: 20%; /* positions the banner 25% from the top of the banner */
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.banner p {
+    position: absolute;
+    top: 30%; /* positions the banner 25% from the top of the banner */
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.banner p + p {
+    top: 38%; /* Adjust the distance from the top for subsequent paragraphs */
+}
+
+.slider-navigation {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    right: 25%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+  }
+
+#prevButton,
+#nextButton {
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Gonna need javascript for the rest with slider I assume */
+
+/* Gallery*/
+#product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.product {
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+}
+
+.product img {
+    display: block;
+    margin: 0 auto;
+}
+
+.product h2,
+.product p {
+    margin: 5px;
+}
+
+/* Footer */
+#footer-options {
+    display: flex;
+    justify-content: center;
+    padding: 20px; 
+
+}
+
+.footerChoice {
+    display: inline;
+    margin: 40px;
+}
+
+.footerChoice img {
+    padding-right: 10px;
+}
+.footerChoice h4 {
+    vertical-align: text-top;
+}
