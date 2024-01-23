@@ -77,7 +77,6 @@ body {
 .hero article img {
     float: right;
     width: 200px;
-    align-items: right;
 }
 
 .hero article p {
