@@ -133,10 +133,10 @@ body {
 }
 
 .history img {
-    margin: 0 0 1 1rem;
+    margin: 0px 0px 1px 1rem;
 	width: auto;
 	max-height: 150px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 /* Adventure Images */
@@ -144,7 +144,7 @@ body {
 .adventure {
     display: flex;
     justify-content: space-between;
-    max-width: 960;
+    max-width: 960px;
     margin: auto;
 }
 
@@ -164,7 +164,7 @@ figure {
     flex-flow: column;
     max-width: 200px;
     margin: auto;
-    flex-wrap: 1;
+    /* flex-wrap: 1; */
     padding: 5px;
 }
 
