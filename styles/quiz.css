@@ -34,7 +34,6 @@ form {
     border-radius: 0.5rem;
     background-color: #eee;
     display: grid;
-
 }
 
 fieldset {
@@ -51,50 +50,23 @@ legend {
     font-size: 1.3rem;
 }
 
+.num {
+    color: rgb(91, 108, 184);
+    font-weight: 1000;
+}
+
 label, input, button, select, textarea {
     font-family: serif, Arial;
 }
 
 label {
-    text-align: right;
+    text-align: left;
     padding-right: 1rem;
 }
 
 input, select, textarea {
     padding: 0.5rem;
     font-size: 1.1rem;
-}
-
-input[type="checkbox"] {
-    width: 22px;
-    height: 22px;
-    vertical-align: bottom;
-}
-
-select {
-    width: 115px;
-}
-
-.feedback {
-    margin: 0 auto;
-}
-
-.form-item {
-    display: grid;
-    align-items: center;
-}
-
-.column1 {
-    grid-template-columns: 3fr 1fr;
-    margin: 0.5rem 0;
-}
-
-.column2 {
-    grid-template-columns: 1fr 2fr;
-}
-
-div {
-    padding: 0.25rem;
 }
 
 label[for="feedback"] {
