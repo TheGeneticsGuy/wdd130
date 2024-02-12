@@ -142,19 +142,19 @@ body {
 
 /* Adventure Images */
 
-.adventure {
+.adventure, .team {
     display: flex;
     justify-content: space-between;
     max-width: 960px;
     margin: auto;
 }
 
-.adventure figure {
+.adventure figure, .team figure {
     max-width: 200px;
     text-align: center; /* Optional: Center the content within each figure */
 }
 
-.adventure img {
+.adventure img, .team img {
     max-width: 100%;
     height: auto; /* Maintain aspect ratio */
 }
@@ -177,6 +177,78 @@ figcaption {
     padding: 5px;
     text-align: center;
 } 
+
+/* FORM CONTACT */
+
+.formArea {
+    padding-top: 2rem;
+}
+
+.contactus {
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+    font-size: 1.2em;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+.contactus fieldset {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+.contactus legend {
+    padding: 0.5rem;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.contactus label {
+    text-align: left;
+    padding-right: 1rem;
+}
+
+.contactus input, .contactus select, .contactus textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.contactus button {
+    margin: 1rem;
+    background-color: rgb(91, 108, 184);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    width: 175px;
+    display: block;
+    margin: 0 auto;
+}
+
+.contactus button:hover {
+    background-color: rgb(117, 2, 108);
+}
+
+#q6 {
+    width: 500px;
+}
+
+footer {
+    padding-top: 2rem;
+}
 
 footer nav {
     display: flex;
