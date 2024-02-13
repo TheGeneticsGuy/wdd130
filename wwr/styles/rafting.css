@@ -62,15 +62,15 @@ nav {
 
 .navigation a {
     display: block;
-	color: navy;
+	color: white;
 	padding: 20px;
 	text-decoration: none;
     font-size: 1.25rem;
 }
 
 .navigation a:hover {
-	color: white;
-	font-weight: 700;
+	color: rgb(252, 193, 208);
+	font-weight: 500;
 	text-decoration: underline;
 }
  
@@ -242,6 +242,17 @@ form {
     background-color: rgb(117, 2, 108);
 }
 
+.purposeRadial {
+    display: flex;
+    flex-direction: column;
+}
+
+.purposeRadial input[type="radio"] {
+    margin-right: 50px; /* Offset horizontally by 10px */
+    vertical-align: middle;
+    margin-top: -15px; /* Offset vertically by 5px */
+}
+  
 #q6 {
     width: 500px;
 }
