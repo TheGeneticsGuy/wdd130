@@ -351,20 +351,17 @@ form {
     overflow: hidden;   /* How to hide the banners not currently at focus */
     padding-top: 20px;
     padding-bottom: 30px;
-}
-
-.tripBanner {
     min-width: 100%;
     max-width: 1200px;
     position: relative;
 }
 
-.tripBanner img {
+#banner-box img {
     max-width: 100%;
     display: block;
 }
 
-.tripBanner p {
+#banner-box p {
     position: absolute;
     top: 40%; /* positions the banner paragraph text 30% from the top of the banner */
     left: 50%;
