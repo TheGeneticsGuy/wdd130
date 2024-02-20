@@ -80,7 +80,7 @@ body {
     padding: 20px;
 }
 
-.hero, .hero2 {
+.hero, .hero2, .hero3 {
     position: relative;
 }
 
@@ -96,7 +96,7 @@ body {
     width: 100%;
 }
 
-.hero article {
+.hero article div {
     position: absolute;
     top: 55%;
     left: 50%;
@@ -106,7 +106,13 @@ body {
     background-color: rgba(24, 83, 138, 0.5);
 }
 
-.hero img, .hero2 img {
+.hero article h2 {
+    text-align: center;
+    margin: 2px;
+    font-size: x-large;
+}
+
+.hero img, .hero2 img, .hero3 img{
     display: block;
     width: 100%;
     height: auto;
@@ -150,8 +156,6 @@ body {
     text-decoration: none;
     color: #fff;
 }
-
-/* History Section */
 
 .history {
     display: flex;
@@ -216,12 +220,25 @@ figcaption {
     padding: 2rem;
 }
 
+.contactForm img {
+    margin: 0 auto;
+    align-items: center;
+}
+
 .formArea {
     padding-top: 2rem;
 }
 
 .contactus {
-    margin: 0;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+    font-size: 1.2em;
+}
+
+.newsletterContactUs {
+    margin: 0 auto;
     padding: 1rem;
     box-sizing: border-box;
     font-family: 'PT Serif', serif;
@@ -238,30 +255,45 @@ form {
     display: grid;
 }
 
-.contactus fieldset {
+.newsletterContactUs {
+    width: 80%;
+}
+
+.contactus fieldset, .newsletterContactUs fieldset {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
 }
 
-.contactus legend {
+.contactus legend, .newsletterContactUs legend {
     padding: 0.5rem;
     font-family: var(--heading-font);
     color: var(--primary-color);
     font-size: 1.3rem;
 }
 
-.contactus label {
+.contactus label, .newsletterContactUs label {
     text-align: left;
     padding-right: 1rem;
 }
 
-.contactus input, .contactus select, .contactus textarea {
+.contactus input, .contactus select, .contactus textarea, .newsletterContactUs input {
     padding: 0.5rem;
     font-size: 1.1rem;
 }
 
-.contactus button {
+.newsletterContactUs input {
+    width: 500px;
+}
+
+.newsletterContactUs div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    text-align: center;
+}
+
+.contactus button, .newsletterContactUs button {
     margin: 1rem;
     background-color: rgb(91, 108, 184);
     color: #fff;
@@ -274,7 +306,7 @@ form {
     margin: 0 auto;
 }
 
-.contactus button:hover {
+.contactus button:hover, .newsletterContactUs button:hover {
     background-color: rgb(117, 2, 108);
 }
 
@@ -427,7 +459,7 @@ form {
     color: #fff;
 }
 
-.tripsChoice {
+.tripsChoice, .callToAction {
     border-bottom: 2px solid black;
 }
 
@@ -486,6 +518,114 @@ table {
     background-color: rgb(237 238 242);
   }
   
+/* Home Page */
+
+
+.hero3 h1 {
+    position: absolute;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    width: 100%;
+}
+
+.stackImg {
+    position: relative;
+}
+
+.overlayImg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    height: auto;
+    max-width: 20%;
+    opacity: 0.6;
+    transform: translate(-50%,-50%);
+    top: 45%;
+    left: 50%;
+}
+
+
+.container {
+    position: relative;
+  }
+  
+.bookNowCall {
+    background-color: var(--accent2-color); /* Background color for the 100% width row */
+    padding: 50px;
+    margin-top: 0;
+}
+
+.overlay-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    width: 600px;
+    height: 40px;
+}
+
+.inner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.saleTxt {
+    flex: 1;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.overlay-box button {
+    width: 100px;
+    height: 35px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.overlay-box button:hover {
+    background-color: rgba(190, 45, 45, 0.733); /* Transparent white color */
+    border-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white color */
+}
+
+.oar {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.callToAction h3 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.tripAction {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.tripAction img {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.tripAction h2,
+.tripAction p {
+    margin: 1px;
+}
+
 
 
 
