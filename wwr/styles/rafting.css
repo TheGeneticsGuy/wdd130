@@ -80,13 +80,13 @@ body {
     padding: 20px;
 }
 
-.hero {
+.hero, .hero2 {
     position: relative;
 }
 
 .hero h1 {
     position: absolute;
-    top: 50px; /* positions the Banner Title text 25% from the top of the banner */
+    top: 50px;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
@@ -98,7 +98,7 @@ body {
 
 .hero article {
     position: absolute;
-    top: 55%; /* positions the Banner Title text 25% from the top of the banner */
+    top: 55%;
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 25px;
@@ -106,7 +106,7 @@ body {
     background-color: rgba(24, 83, 138, 0.5);
 }
 
-.hero img {
+.hero img, .hero2 img {
     display: block;
     width: 100%;
     height: auto;
@@ -118,6 +118,36 @@ body {
 }
 
 .hero article p {
+    color: #fff;
+}
+
+.contactUsButton {
+    display: inline-block;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.45);
+    position: absolute;
+    top: 35%; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.contactUsButton a {
+    text-decoration: none;
+}
+
+.contactUsButton:hover {
+    background-color: rgba(190, 45, 45, 0.733); /* Transparent white color */
+    border-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white color */
+}
+
+.contactUsButton a:visited {
+    text-decoration: none;
     color: #fff;
 }
 
@@ -179,6 +209,12 @@ figcaption {
 } 
 
 /* FORM CONTACT */
+
+.contactForm {
+    margin: 0 auto;
+    width: 68%;
+    padding: 2rem;
+}
 
 .formArea {
     padding-top: 2rem;
@@ -257,14 +293,231 @@ form {
     width: 500px;
 }
 
+/* Trips Page */
+
+
+.bookTrip {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.bookTrip h2 {
+    padding: 10px;
+    font-weight: 1000;
+    font-size: xx-large;
+}
+
+.bookTrip p {
+    max-width: 550px;
+    margin: 0px;
+    padding: 10px;
+}
+
+.bookTrip button {
+    margin-top: 1rem;
+    width: 500px;
+    height: 50px;
+    font-size: x-large;
+    font-weight: 400;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+.bookTrip button a {
+    text-decoration: none;
+}
+
+.bookTrip button:hover {
+    background-color: rgba(190, 45, 45, 0.733); /* Transparent white color */
+    border-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white color */
+}
+
+.bookTrip button a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*Scrolling triple Banner*/
+#banner-box {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    display: flex;
+    overflow: hidden;   /* How to hide the banners not currently at focus */
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.tripBanner {
+    min-width: 100%;
+    max-width: 1200px;
+    position: relative;
+}
+
+.tripBanner img {
+    max-width: 100%;
+    display: block;
+}
+
+.tripBanner p {
+    position: absolute;
+    top: 40%; /* positions the banner paragraph text 30% from the top of the banner */
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 1rem;
+    font-size: x-large;    
+}
+
+.bannerL {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+#trip-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.tripOptions {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.tripOptions img {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.tripOptions h2,
+.tripOptions p {
+    margin: 1px;
+}
+
+#trip-gallery button {
+    width: 150px;
+    height: 65px;
+    font-size: x-large;
+    font-weight: 400;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+#trip-gallery button a {
+    text-decoration: none;
+}
+
+#trip-gallery button:hover {
+    background-color: rgba(190, 45, 45, 0.733); /* Transparent white color */
+    border-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white color */
+}
+
+#trip-gallery button a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.tripsChoice {
+    border-bottom: 2px solid black;
+}
+
+.tableTrips {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+}
+
+.tableTrips h2 {
+    font-size: xx-large;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  
+  caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  thead {
+    background-color: rgb(228 240 245);
+  }
+  
+  th,
+  td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+  }
+  
+  td:last-of-type {
+    text-align: center;
+  }
+
+  th:first-of-type,
+  td:first-of-type {
+    text-align: left;
+  }
+
+  th:not(first-of-type),
+  td:not(first-of-type) {
+    text-align: center;
+  }
+  
+  tbody > tr:nth-of-type(even) {
+    background-color: rgb(237 238 242);
+  }
+  
+
+
+
+
+
+/* Footer */
+
 footer {
     padding-top: 2rem;
 }
 
 footer nav {
-    display: flex;
+    text-align: center;
+    padding: 10px;
     align-items: center;
-    justify-content: flex-end;
+}
+
+.wfLink {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+
+.socials {
+    display: flex;
+}
+
+.socials a {
+    margin-left: 5px;
 }
 
 footer p {
