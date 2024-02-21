@@ -328,7 +328,7 @@ form {
 /* Trips Page */
 
 
-.bookTrip {
+.bookTrip, .raftingDescription {
     display:flex;
     flex-direction: column;
     text-align: center;
@@ -347,7 +347,7 @@ form {
     padding: 10px;
 }
 
-.bookTrip button {
+.bookTrip button, .raftingDescription button {
     margin-top: 1rem;
     width: 500px;
     height: 50px;
@@ -358,18 +358,9 @@ form {
     cursor: pointer;
 }
 
-.bookTrip button a {
-    text-decoration: none;
-}
-
-.bookTrip button:hover {
+.bookTrip button:hover, .raftingDescription button:hover {
     background-color: rgba(190, 45, 45, 0.733); /* Transparent white color */
     border-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white color */
-}
-
-.bookTrip button a:visited {
-    text-decoration: none;
-    color: #fff;
 }
 
 
@@ -410,7 +401,7 @@ form {
     font-weight: 400;
 }
 
-#trip-gallery {
+#trip-gallery, #trip-gallery2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -459,7 +450,7 @@ form {
     color: #fff;
 }
 
-.tripsChoice, .callToAction {
+.tripsChoice {
     border-bottom: 2px solid black;
 }
 
@@ -529,9 +520,25 @@ table {
     transform: translate(-50%,-50%);
     text-align: center;
     color: #fff;
-    font-size: 50px;
+    font-size: 3rem;
     width: 100%;
 }
+
+.hero3 h3 {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 0px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: var(--heading-font);
+}
+
 
 .stackImg {
     position: relative;
@@ -607,29 +614,124 @@ table {
 .callToAction h3 {
     text-align: center;
     font-size: 50px;
+    margin-top: 2rem;
+    margin-bottom: 0px;
 }
 
 .tripAction {
     width: 400x;
     margin: 20px;
-    text-align: center;
+    position: relative;
+    cursor: pointer;
 }
 
-.tripAction img {
+.tripImage {
     display: block;
     width: 400px;
+    height: auto;
     margin: 0 auto;
 }
 
 .tripAction h2,
 .tripAction p {
     margin: 1px;
+    position: absolute;
+    color: white;
+    font-family: var(--heading-font);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
 }
 
+.tripAction h2 {
+    top: 10px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+}
 
+.tripAction p {
+    font-size: xx-large;
+    font-weight: 1000;
+    font-size: 30px;
+    text-align: left;
+}
 
+.tripAction p:nth-of-type(1) {
+    top: 65%; /* Adjust as needed */
+    left: 35%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0px;
+    padding-left: 1rem;
+}
 
+.tripAction p:nth-of-type(2) {
+    top: 88%; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
+.tripAction .linkItem {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+}
+
+.linkItem {
+    width: 40px;
+}
+
+.raftingDescription {
+    text-align: center;
+    /* padding: 0px; */
+    margin: 1rem;
+}
+
+.raftingDescription p {
+    margin: 0px;
+    font-size: 1.2rem;
+}
+
+.raftingDescription h2 {
+    font-size: 50px;
+    margin: 0px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 3px;
+    cursor: pointer;
+}
+
+.gImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gImg img {
+    max-height:200px;
+    width: auto;
+    max-width: 100%;
+}
+
+.finalGallery {
+    border-bottom: 2px solid black;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
 
 /* Footer */
 
