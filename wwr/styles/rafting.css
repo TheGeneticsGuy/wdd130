@@ -733,6 +733,10 @@ table {
     padding-top: 1rem;
 }
 
+.finalGallery h2 {
+    text-align: center;
+}
+
 /* Footer */
 
 footer {
